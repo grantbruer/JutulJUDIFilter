@@ -1,0 +1,5 @@
+using Aqua
+import EnsembleNormalizingFlowFilters
+
+Aqua.test_all(EnsembleNormalizingFlowFilters, ambiguities=false)
+Aqua.test_ambiguities(EnsembleNormalizingFlowFilters)

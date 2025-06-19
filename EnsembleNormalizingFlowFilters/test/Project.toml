@@ -1,0 +1,10 @@
+[deps]
+Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+InvertibleNetworks = "b7115f24-5f92-4794-81e8-23b0ddb121d3"
+MLUtils = "f1d291b0-491e-4a28-83b9-f70985020b54"
+UNet = "0d73aaa9-994a-4556-95d0-da67cb772a03"
+
+[compat]
+Aqua = "0.8"
