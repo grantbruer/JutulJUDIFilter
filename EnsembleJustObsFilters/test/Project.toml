@@ -1,0 +1,10 @@
+[deps]
+Aqua = "4c88cf16-eb10-579e-8560-4a9242c79595"
+SlimOptim = "e4c7bc62-5b23-4522-a1b9-71c2be45f1df"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+Aqua = "0.8"
+
+[extras]
+SeismicPlumeEnsembleFilter = "32f13ed4-4a67-48ae-a811-e7b1b7af3319"
