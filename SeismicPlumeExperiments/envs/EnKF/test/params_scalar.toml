@@ -1,0 +1,7 @@
+format = "v1.4"
+
+[filter]
+
+algorithm = "enkf"
+unique_name = "scalar"
+ensemble_size = 10

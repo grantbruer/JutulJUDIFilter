@@ -1,0 +1,133 @@
+format = "v1.4"
+compass_dir = "compass"
+
+[transition]
+
+n = [325, 1, 341]
+d = [12.5, 100.0, 6.25] # meters
+nt = 25             # number of time steps stored in one file
+dt = 73.0485        # time interval between 2 adjacent time steps (in days)
+nbatches = 1        # number of files, each of which has nt timesteps.
+
+kv_over_kh = 0.36 # ratio of vertical permeability over horizontal permeability.
+
+sat0_radius_cells = 4
+sat0_range = [0.2, 0.8]
+
+# These parameters are for fluid physics.
+viscosity_CO2 = 1e-4 # Pascal seconds (decapoise) Reference: https://github.com/lidongzh/FwiFlow.jl
+viscosity_H2O = 1e-3 # Pascal seconds (decapoise) Reference: https://github.com/lidongzh/FwiFlow.jl
+density_CO2 = 501.9 # kg/m^3
+density_H2O = 1053.0 # kg/m^3
+g = 9.81 # m/s^2
+reference_pressure = 1.5e7 # Pascals
+compressibility_CO2 = 8e-9 # 1 / Pascals (should be reciprocal of bulk modulus)
+compressibility_H2O = 3.6563071e-10 # 1 / Pascals (should be reciprocal of bulk modulus)
+
+[transition.porosity]
+type = "constant"
+value = 0.25
+pad_boundary = true
+pad_value = 1e8
+
+[transition.injection]
+loc = [1875.0, 50.0]
+search_zrange = [1693.75, 1812.5]
+length = 37.5 # meters
+density_CO2 = 501.9 # kg/m^3
+rate_mtons_year = 0.8
+
+
+[transition.production]
+active = false
+loc = [2875.0, 50.0]
+search_zrange = [1693.75, 1756.25]
+length = 37.5 # meters
+bottom_hole_pressure_target = 5e6 # Pascals
+
+
+[observation]
+
+n = [325, 341]
+d = [12.5, 6.25]
+
+nbl = 80 # number of absorbing layers
+
+nsrc = 8   # num of sources
+nrec = 200 # num of receivers
+
+timeR = 1800.0  # recording time (ms)
+dtR = 4.0 # recording time sampling rate (ms)
+f0 = 0.024 # source frequency (kHz)
+
+setup_type = "surface"
+
+snr = 8.0
+
+# These parameters control how CO2 modifies the density and p-wave modulus.
+density_CO2 = 501.9 # kg/m^3
+density_H2O = 1053.0 # kg/m^3 Reference: https://github.com/lidongzh/FwiFlow.jl
+bulk_min = 36.6e9  # Bulk modulus of dry rock.
+bulk_H2O = 2.735e9 # Bulk modulus of water. Reference: https://github.com/lidongzh/FwiFlow.jl
+bulk_CO2 = 0.125e9 # Bulk modulus of carbon dioxide. Reference: https://github.com/lidongzh/FwiFlow.jl
+
+[observation.background]
+type = "blur"
+blur_cells = 10.0
+
+[ground_truth]
+
+[ground_truth.transition.permeability]
+type = "file_K"
+K_file = "broad&narrow_perm_models_new.jld2"
+key = "K"
+
+[ground_truth.observation]
+noise_seed = 0xcd847efe
+
+[ground_truth.observation.velocity]
+type = "file_mrho"
+mrho_file = "BGCompass_tti_625m.jld2"
+
+[ground_truth.observation.density]
+type = "file_mrho"
+mrho_file = "BGCompass_tti_625m.jld2"
+
+[filter]
+
+algorithm = "enkf"
+unique_name = "noise4"
+ensemble_size = 256
+transition_type = "plume"
+observation_type = "born_rtm_depth_noise"
+ground_truth_observation_type = "same"
+ground_truth_observation_noisy = true
+observation_noise_type = "diagonal"
+observation_noise_stddev = 6e15 # Same units as observation.
+
+initialization_seed = 0xceeff442
+
+update_interval = 5 # Read observations every 5 time steps.
+make_observation_square = true
+include_noise_in_y_covariance = true
+
+max_saturation_update_size = -1
+saturation_range = [0, 1]
+
+update_permeability = false
+max_permeability_update_size = -1
+permeability_range = [1e-18, 5e-12]
+
+
+print_progress = true
+make_assimilation_figures = true
+
+[filter.transition.permeability]
+type = "file_Kphi"
+Kphi_file = "broad&narrow_perm_models_new.jld2"
+key = "BroadK"
+idx_file = "Compass256_idx.jld2"
+
+
+[stats]
+finer_scale = 10

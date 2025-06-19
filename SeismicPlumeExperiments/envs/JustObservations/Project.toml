@@ -1,0 +1,10 @@
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+EnsembleFilters = "4c935b77-fba2-4cf8-98f7-400acf44ca9e"
+EnsembleJustObsFilters = "31578c2e-7b44-408d-a724-49e15762aed9"
+JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
+KernelAbstractions = "63c18a36-062a-441e-b654-da1e3ab1ce7c"
+MyUtils = "41c6dafd-7dbd-44be-9ef9-d84effbb6f05"
+SeismicPlumeEnsembleFilter = "32f13ed4-4a67-48ae-a811-e7b1b7af3319"
+SlimOptim = "e4c7bc62-5b23-4522-a1b9-71c2be45f1df"

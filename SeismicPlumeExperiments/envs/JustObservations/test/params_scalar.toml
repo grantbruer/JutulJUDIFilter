@@ -1,0 +1,36 @@
+format = "v1.4"
+
+[filter]
+
+algorithm = "just_observations"
+unique_name = "scalar"
+ensemble_size = 10
+observation_noise_type = "diagonal"
+observation_noise_stddev = 1e0 # Same units as observation.
+
+initialization_seed = 0xceeff442
+
+print_progress = true
+make_assimilation_figures = false
+
+[filter.optimization]
+horizontal_gradient_norm_type = "none"
+horizontal_gradient_scale = 1e0
+vertical_gradient_norm_type = "none"
+vertical_gradient_scale = 1e0
+inject_connect_norm_type = "none"
+inject_connect_scale = 1e0
+
+constraints = []
+nonzero_threshold = 0e0
+
+package = "SlimOptim"
+method = "PQN"
+
+[filter.optimization.method_kwargs]
+verbose = 3
+maxIter = 100
+memory = 3
+corrections = 10
+iniStep = 1e-6
+adjustStep = true

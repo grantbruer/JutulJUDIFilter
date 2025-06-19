@@ -1,0 +1,8 @@
+[deps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+EnsembleFilters = "4c935b77-fba2-4cf8-98f7-400acf44ca9e"
+EnsembleKalmanFilters = "4d46eba4-7819-43f3-be1c-bdd0f62726a6"
+JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
+KernelAbstractions = "63c18a36-062a-441e-b654-da1e3ab1ce7c"
+KernelMatrices = "b172bcd2-82ed-11e9-108e-f9294c34b9e6"
+MyUtils = "41c6dafd-7dbd-44be-9ef9-d84effbb6f05"

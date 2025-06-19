@@ -1,0 +1,770 @@
+
+---
+title: "Ground truth"
+editor: visual
+format: 
+  html:
+    toc: true
+    page-layout: full
+figs_path: "../figs"
+lightbox:
+  match: auto
+  effect: none
+---
+
+## Static plume physics parameters
+
+::: {#fig-gt-plume-params}
+
+![]({{< meta figs_path >}}/ground_truth/static/porosity.png){group="plume_static"}
+
+![]({{< meta figs_path >}}/ground_truth/static/permeability.png){group="plume_static"}
+
+![]({{< meta figs_path >}}/ground_truth/static/log10_permeability.png){group="plume_static"}
+
+Ground-truth plume model parameters.
+:::
+
+## Seismic imaging physics
+
+::: {#fig-gt-seismic-params}
+
+![]({{< meta figs_path >}}/ground_truth/static/density.png){group="seismic_static"}
+
+![]({{< meta figs_path >}}/ground_truth/static/pwave_velocity.png){group="seismic_static"}
+
+
+![]({{< meta figs_path >}}/ground_truth/static/impedance.png){group="seismic_static"}
+
+Ground-truth seismic model parameters $m_0$ before CO~2~ injection.
+:::
+
+
+::: {#fig-blurred}
+
+![]({{< meta figs_path >}}/ground_truth/static/background_density.png){group="seismic_background_static"}
+
+![]({{< meta figs_path >}}/ground_truth/static/background_pwave_velocity.png){group="seismic_background_static"}
+
+![]({{< meta figs_path >}}/ground_truth/static/background_impedance.png){group="seismic_background_static"}
+
+Blurred seismic model parameters $m_B = \text{blur}(m_0)$ for Born approximation and RTM.
+:::
+
+
+## Plume
+
+### Saturation
+
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+
+![]({{< meta figs_path >}}/ground_truth/plume/saturation.mp4){group="ground_truth_saturation"}
+
+## Images
+
+![]({{< meta figs_path >}}/ground_truth/plume/saturation/saturation-0001.png){group="ground_truth_saturation"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/plume/saturation/saturation-0006.png){group="ground_truth_saturation"}
+![]({{< meta figs_path >}}/ground_truth/plume/saturation/saturation-0011.png){group="ground_truth_saturation"}
+![]({{< meta figs_path >}}/ground_truth/plume/saturation/saturation-0016.png){group="ground_truth_saturation"}
+![]({{< meta figs_path >}}/ground_truth/plume/saturation/saturation-0021.png){group="ground_truth_saturation"}
+![]({{< meta figs_path >}}/ground_truth/plume/saturation/saturation-0026.png){group="ground_truth_saturation"}
+:::
+
+:::
+Ground-truth plume saturation.
+:::
+
+
+### Pressure
+
+::: {#fig-}
+::: {.panel-tabset}
+## Value
+
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/plume/pressure.mp4)
+
+## Images
+
+![]({{< meta figs_path >}}/ground_truth/plume/pressure/pressure-0001.png){group="ground_truth_pressure"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/plume/pressure/pressure-0006.png){group="ground_truth_pressure"}
+![]({{< meta figs_path >}}/ground_truth/plume/pressure/pressure-0011.png){group="ground_truth_pressure"}
+![]({{< meta figs_path >}}/ground_truth/plume/pressure/pressure-0016.png){group="ground_truth_pressure"}
+![]({{< meta figs_path >}}/ground_truth/plume/pressure/pressure-0021.png){group="ground_truth_pressure"}
+![]({{< meta figs_path >}}/ground_truth/plume/pressure/pressure-0026.png){group="ground_truth_pressure"}
+:::
+
+:::
+
+## Difference
+
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/plume/pressure_diff.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/plume/pressure_diff/pressure_diff-0001.png){group="ground_truth_pressure_diff"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/plume/pressure_diff/pressure_diff-0006.png){group="ground_truth_pressure_diff"}
+![]({{< meta figs_path >}}/ground_truth/plume/pressure_diff/pressure_diff-0011.png){group="ground_truth_pressure_diff"}
+![]({{< meta figs_path >}}/ground_truth/plume/pressure_diff/pressure_diff-0016.png){group="ground_truth_pressure_diff"}
+![]({{< meta figs_path >}}/ground_truth/plume/pressure_diff/pressure_diff-0021.png){group="ground_truth_pressure_diff"}
+![]({{< meta figs_path >}}/ground_truth/plume/pressure_diff/pressure_diff-0026.png){group="ground_truth_pressure_diff"}
+:::
+
+:::
+
+:::
+Ground-truth plume pressure.
+:::
+
+
+## Dynamic seismic parameters
+
+### Density
+
+::: {#fig-}
+::: {.panel-tabset}
+## Value
+
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/density.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/density/density-0001.png){group="ground_truth_density"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/density/density-0006.png){group="ground_truth_density"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/density/density-0011.png){group="ground_truth_density"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/density/density-0016.png){group="ground_truth_density"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/density/density-0021.png){group="ground_truth_density"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/density/density-0026.png){group="ground_truth_density"}
+:::
+
+:::
+
+## Difference
+
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_density.mp4)
+
+## Images
+
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_density/delta_density-0001.png){group="ground_truth_delta_density"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_density/delta_density-0006.png){group="ground_truth_delta_density"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_density/delta_density-0011.png){group="ground_truth_delta_density"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_density/delta_density-0016.png){group="ground_truth_delta_density"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_density/delta_density-0021.png){group="ground_truth_delta_density"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_density/delta_density-0026.png){group="ground_truth_delta_density"}
+:::
+
+:::
+
+:::
+Density
+:::
+
+
+### Velocity
+
+::: {#fig-}
+::: {.panel-tabset}
+## Value
+
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/velocity.mp4)
+
+## Images
+
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/velocity/velocity-0001.png){group="ground_truth_velocity"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/velocity/velocity-0006.png){group="ground_truth_velocity"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/velocity/velocity-0011.png){group="ground_truth_velocity"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/velocity/velocity-0016.png){group="ground_truth_velocity"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/velocity/velocity-0021.png){group="ground_truth_velocity"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/velocity/velocity-0026.png){group="ground_truth_velocity"}
+:::
+
+:::
+
+## Difference
+
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_velocity.mp4)
+
+## Images
+
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_velocity/delta_velocity-0001.png){group="ground_truth_delta_velocity"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_velocity/delta_velocity-0006.png){group="ground_truth_delta_velocity"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_velocity/delta_velocity-0011.png){group="ground_truth_delta_velocity"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_velocity/delta_velocity-0016.png){group="ground_truth_delta_velocity"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_velocity/delta_velocity-0021.png){group="ground_truth_delta_velocity"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_velocity/delta_velocity-0026.png){group="ground_truth_delta_velocity"}
+:::
+
+:::
+
+:::
+P-wave velocity
+:::
+
+
+
+### Acoustic impedance
+
+::: {#fig-}
+::: {.panel-tabset}
+## Value
+
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/impedance.mp4)
+
+## Images
+
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/impedance/impedance-0001.png){group="ground_truth_impedance"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/impedance/impedance-0006.png){group="ground_truth_impedance"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/impedance/impedance-0011.png){group="ground_truth_impedance"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/impedance/impedance-0016.png){group="ground_truth_impedance"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/impedance/impedance-0021.png){group="ground_truth_impedance"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/impedance/impedance-0026.png){group="ground_truth_impedance"}
+:::
+
+:::
+
+## Difference
+
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_impedance.mp4)
+
+## Images
+
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_impedance/delta_impedance-0001.png){group="ground_truth_delta_impedance"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_impedance/delta_impedance-0006.png){group="ground_truth_delta_impedance"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_impedance/delta_impedance-0011.png){group="ground_truth_delta_impedance"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_impedance/delta_impedance-0016.png){group="ground_truth_delta_impedance"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_impedance/delta_impedance-0021.png){group="ground_truth_delta_impedance"}
+![]({{< meta figs_path >}}/ground_truth/seismic_params_dynamic/delta_impedance/delta_impedance-0026.png){group="ground_truth_delta_impedance"}
+:::
+
+:::
+
+:::
+Specific characteristic acoustic impedance
+:::
+
+
+
+## Shot records
+
+### Baseline model shot
+
+::: {#fig-}
+
+![]({{< meta figs_path >}}/ground_truth/shots/shot_baseline.png)
+
+Baseline shot: $F(m_B)$
+:::
+
+### Plume shots
+
+::: {#fig-}
+
+::: {.panel-tabset}
+## Clean
+
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/shots/shot.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/shots/shot/shot-0001.png){group="ground_truth_shot"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/shots/shot/shot-0006.png){group="ground_truth_shot"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot/shot-0011.png){group="ground_truth_shot"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot/shot-0016.png){group="ground_truth_shot"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot/shot-0021.png){group="ground_truth_shot"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot/shot-0026.png){group="ground_truth_shot"}
+:::
+
+:::
+Born approximation for shots: $\hat F(m_k) = F(m_B) + J_B(m_k - m_B)$
+:::
+
+## Noisy
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noisy.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noisy/shot_noisy-0001.png){group="ground_truth_shot_noisy"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noisy/shot_noisy-0006.png){group="ground_truth_shot_noisy"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noisy/shot_noisy-0011.png){group="ground_truth_shot_noisy"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noisy/shot_noisy-0016.png){group="ground_truth_shot_noisy"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noisy/shot_noisy-0021.png){group="ground_truth_shot_noisy"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noisy/shot_noisy-0026.png){group="ground_truth_shot_noisy"}
+:::
+
+:::
+Noisy Born approximation for shots: $\hat F_\eta(m_k) = F(m_B) + J_B(m_k - m_B) + \eta$, with $\|\eta\| \approx 0.4 \|J_B(m_k - m_B)\|$
+:::
+
+## Noise
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0001.png){group="ground_truth_shot_noise"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0006.png){group="ground_truth_shot_noise"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0011.png){group="ground_truth_shot_noise"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0016.png){group="ground_truth_shot_noise"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0021.png){group="ground_truth_shot_noise"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0026.png){group="ground_truth_shot_noise"}
+:::
+
+:::
+Noise for shots: $\|\eta\| \approx 0.4 \|J_B(m_k - m_B)\|$
+:::
+
+:::
+Shots.
+:::
+
+
+### Shots relative to baseline
+
+::: {#fig-}
+
+::: {.panel-tabset}
+## Clean
+
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline/dshot_baseline-0001.png){group="ground_truth_dshot_baseline"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline/dshot_baseline-0006.png){group="ground_truth_dshot_baseline"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline/dshot_baseline-0011.png){group="ground_truth_dshot_baseline"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline/dshot_baseline-0016.png){group="ground_truth_dshot_baseline"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline/dshot_baseline-0021.png){group="ground_truth_dshot_baseline"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline/dshot_baseline-0026.png){group="ground_truth_dshot_baseline"}
+:::
+
+:::
+Born approximation for difference from baseline: $\hat F(m_k) - F(m_B) = J_B(m_k - m_B)$
+:::
+
+## Noisy
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline_noisy.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline_noisy/dshot_baseline_noisy-0001.png){group="ground_truth_dshot_baseline_noisy"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline_noisy/dshot_baseline_noisy-0006.png){group="ground_truth_dshot_baseline_noisy"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline_noisy/dshot_baseline_noisy-0011.png){group="ground_truth_dshot_baseline_noisy"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline_noisy/dshot_baseline_noisy-0016.png){group="ground_truth_dshot_baseline_noisy"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline_noisy/dshot_baseline_noisy-0021.png){group="ground_truth_dshot_baseline_noisy"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_baseline_noisy/dshot_baseline_noisy-0026.png){group="ground_truth_dshot_baseline_noisy"}
+:::
+
+:::
+Noisy Born approximation for difference from baseline: $\hat F_\eta(m_k) - F(m_B) = J_B(m_k - m_B)+ \eta_k$, with $\|\eta_k\| \approx 0.4 \|J_B(m_k - m_B)\|$
+:::
+
+## Noise
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0001.png){group="ground_truth_shot_noise"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0006.png){group="ground_truth_shot_noise"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0011.png){group="ground_truth_shot_noise"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0016.png){group="ground_truth_shot_noise"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0021.png){group="ground_truth_shot_noise"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0026.png){group="ground_truth_shot_noise"}
+:::
+
+:::
+Noise for shots: $\|\eta\| \approx 0.4 \|J_B(m_k - m_B)\|$
+:::
+
+:::
+Born approximation
+:::
+
+
+### Shots relative to initial
+
+::: {#fig-}
+
+::: {.panel-tabset}
+## Clean
+
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/shots/dshot.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/shots/dshot/dshot-0001.png){group="ground_truth_dshot"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/shots/dshot/dshot-0006.png){group="ground_truth_dshot"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot/dshot-0011.png){group="ground_truth_dshot"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot/dshot-0016.png){group="ground_truth_dshot"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot/dshot-0021.png){group="ground_truth_dshot"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot/dshot-0026.png){group="ground_truth_dshot"}
+:::
+
+:::
+Change due to plume: $\hat F(m_k) - \hat F(m_0) = J_B(m_k - m_0)$
+:::
+
+## Noisy
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_noisy.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_noisy/dshot_noisy-0001.png){group="ground_truth_dshot_noisy"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_noisy/dshot_noisy-0006.png){group="ground_truth_dshot_noisy"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_noisy/dshot_noisy-0011.png){group="ground_truth_dshot_noisy"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_noisy/dshot_noisy-0016.png){group="ground_truth_dshot_noisy"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_noisy/dshot_noisy-0021.png){group="ground_truth_dshot_noisy"}
+![]({{< meta figs_path >}}/ground_truth/shots/dshot_noisy/dshot_noisy-0026.png){group="ground_truth_dshot_noisy"}
+:::
+
+:::
+Noisy change due to plume: $\hat F_\eta(m_k) - \hat F_\eta(m_0) = J_B(m_k - m_0) + \eta_k-\eta_0$.
+:::
+
+## Noise
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0001.png){group="ground_truth_shot_noise"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0006.png){group="ground_truth_shot_noise"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0011.png){group="ground_truth_shot_noise"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0016.png){group="ground_truth_shot_noise"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0021.png){group="ground_truth_shot_noise"}
+![]({{< meta figs_path >}}/ground_truth/shots/shot_noise/shot_noise-0026.png){group="ground_truth_shot_noise"}
+:::
+
+:::
+Noise for shots: $\|\eta\| \approx 0.4 \|J_B(m_k - m_B)\|$
+:::
+
+:::
+Shot difference due to plume
+:::
+
+
+## RTMs
+
+
+### RTMs applied to baseline difference shots
+
+::: {#fig-}
+
+::: {.panel-tabset}
+## Clean
+
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain/rtms_plain-0001.png){group="ground_truth_rtms_plain"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain/rtms_plain-0006.png){group="ground_truth_rtms_plain"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain/rtms_plain-0011.png){group="ground_truth_rtms_plain"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain/rtms_plain-0016.png){group="ground_truth_rtms_plain"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain/rtms_plain-0021.png){group="ground_truth_rtms_plain"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain/rtms_plain-0026.png){group="ground_truth_rtms_plain"}
+:::
+
+:::
+RTM: $J_B^T (\hat F(m_k) - F(m_B)) = J_B^T J_B (m_k - m_b)$
+:::
+
+## Noisy
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain_noisy.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain_noisy/rtms_plain_noisy-0001.png){group="ground_truth_rtms_plain_noisy"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain_noisy/rtms_plain_noisy-0006.png){group="ground_truth_rtms_plain_noisy"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain_noisy/rtms_plain_noisy-0011.png){group="ground_truth_rtms_plain_noisy"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain_noisy/rtms_plain_noisy-0016.png){group="ground_truth_rtms_plain_noisy"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain_noisy/rtms_plain_noisy-0021.png){group="ground_truth_rtms_plain_noisy"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_plain_noisy/rtms_plain_noisy-0026.png){group="ground_truth_rtms_plain_noisy"}
+:::
+:::
+Noisy RTM: $J_B^T (\hat F_\eta(m_k) - F(m_B)) = J_B^T (J_B (m_k - m_B) + \eta_k)$
+:::
+
+:::
+RTMs relative to baseline model
+:::
+
+
+### RTMs relative to initial time
+
+::: {#fig-}
+
+::: {.panel-tabset}
+## Clean
+
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset/rtms_offset-0001.png){group="ground_truth_rtms_offset"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset/rtms_offset-0006.png){group="ground_truth_rtms_offset"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset/rtms_offset-0011.png){group="ground_truth_rtms_offset"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset/rtms_offset-0016.png){group="ground_truth_rtms_offset"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset/rtms_offset-0021.png){group="ground_truth_rtms_offset"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset/rtms_offset-0026.png){group="ground_truth_rtms_offset"}
+:::
+:::
+RTM difference: $J_B^T (\hat F(m_k) - \hat F(m_0)) = J_B^T J_B (m_k - m_0)$
+:::
+
+## Noisy
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset_noisy.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset_noisy/rtms_offset_noisy-0001.png){group="ground_truth_rtms_offset_noisy"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset_noisy/rtms_offset_noisy-0006.png){group="ground_truth_rtms_offset_noisy"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset_noisy/rtms_offset_noisy-0011.png){group="ground_truth_rtms_offset_noisy"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset_noisy/rtms_offset_noisy-0016.png){group="ground_truth_rtms_offset_noisy"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset_noisy/rtms_offset_noisy-0021.png){group="ground_truth_rtms_offset_noisy"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_offset_noisy/rtms_offset_noisy-0026.png){group="ground_truth_rtms_offset_noisy"}
+:::
+:::
+Noisy RTM difference: $J_B^T (\hat F_\eta(m_k) - \hat F_\eta(m_0)) = J_B^T (J_B (m_k - m_0) + \eta_k-\eta_0)$
+:::
+
+## Noise
+::: {#fig-}
+::: {.panel-tabset}
+## Video
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_noise.mp4)
+
+## Images
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_noise/rtms_noise-0001.png){group="ground_truth_rtms_noise"}
+
+::: {.callout-note collapse="true"}
+
+## The rest of the images
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_noise/rtms_noise-0006.png){group="ground_truth_rtms_noise"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_noise/rtms_noise-0011.png){group="ground_truth_rtms_noise"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_noise/rtms_noise-0016.png){group="ground_truth_rtms_noise"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_noise/rtms_noise-0021.png){group="ground_truth_rtms_noise"}
+![]({{< meta figs_path >}}/ground_truth/rtm/rtms_noise/rtms_noise-0026.png){group="ground_truth_rtms_noise"}
+:::
+:::
+Noise in RTM: $J_B^T (\eta_k-\eta_0)$, where $\|\eta\| \approx 0.4 \|J_B(m_k - m_B)\|$
+:::
+
+:::
+RTMs relative to initial time
+:::
+
+
+
+<!-- 
+
+## NoObs
+
+
+::: {#fig-}
+
+![]({{< meta figs_path >}}/noobs_N256/mean_saturation.mp4)
+
+Ground-truth plume.
+:::
+
+
+::: {#fig-justobs-plume}
+
+![]({{< meta figs_path >}}/noobs_N256/mean_saturation_field_error.mp4)
+
+Standard inversion plume error.
+:::
+
+
+## EnKF
+
+
+::: {#fig-}
+
+![]({{< meta figs_path >}}/enkf_N256/mean_saturation.mp4)
+
+Ground-truth plume.
+:::
+
+
+::: {#fig-justobs-plume}
+
+![]({{< meta figs_path >}}/enkf_N256/mean_saturation_field_error.mp4)
+
+Standard inversion plume error.
+:::
+
+
+## JustObs issue
+
+::: {#fig-justobs-plume}
+
+![]({{< meta figs_path >}}/original_justobs_N256_noisy/mean_saturation.mp4)
+
+Standard inversion plume.
+:::
+
+
+::: {#fig-justobs-plume}
+
+![]({{< meta figs_path >}}/julia_1.10.0_justobs_N256_noisy/mean_saturation_field_error.mp4)
+
+Standard inversion plume error.
+:::
+
+
+## Comparison between methods
+
+
+::: {#fig-justobs-plume}
+
+![](figs/l2_errors.png)
+
+Plume error.
+:::
+
+
+::: {#fig-justobs-plume}
+
+![](figs/noisy_l2_errors.png)
+
+Plume error.
+:::
+
+
+::: {#fig-justobs-plume}
+
+![](figs/noisy_ssim_errors.png)
+
+Plume error.
+:::
+
+TODO: Plot percent decre ase in seismic params. -->
