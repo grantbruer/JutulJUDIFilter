@@ -1,0 +1,43 @@
+format = "v0.1"
+
+[transition]
+
+sigma = 10
+rho = 28
+beta = 2.666666666666666666666
+scaling = 1
+nt = 4000 # Number of assimilation steps
+ministep_nt = 4 # number of ministeps between 2 observation times
+ministep_dt = 0.002
+burnin_steps = 2500
+
+
+[observation]
+
+noise_level = 0.1
+noise_seed = 0x3289745
+
+[ground_truth]
+seed = 1983745
+
+[filter]
+algorithm = "enkf"
+unique_name = "N50"
+ensemble_size = 50
+update_interval = 100 # Read observations every X time steps.
+initialization_seed = 9347215
+initial_noise_level = 3
+initial_ministep_dt = 0.002
+initial_ministep_nt = 500
+
+
+# EnKF params
+observation_noise_stddev = 1.0
+make_observation_square = false
+observation_noise_type = "diagonal"
+include_noise_in_y_covariance = false
+make_assimilation_figures = false
+print_progress = false
+update_permeability = false
+max_saturation_update_size = -1
+saturation_range = [-1e4, 1e4]

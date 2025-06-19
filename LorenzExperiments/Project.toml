@@ -1,0 +1,10 @@
+[deps]
+EnsembleFilters = "4c935b77-fba2-4cf8-98f7-400acf44ca9e"
+EnsembleKalmanFilters = "4d46eba4-7819-43f3-be1c-bdd0f62726a6"
+EnsembleNormalizingFlowFilters = "1cda7fba-369d-4ae1-8e09-9018d7d2bf0e"
+IterativeSolvers = "42fd0dbc-a981-5370-80f2-aaf504508153"
+JOLI = "bb331ad6-a1cf-11e9-23da-9bcb53c69f6f"
+KernelMatrices = "b172bcd2-82ed-11e9-108e-f9294c34b9e6"
+Lorenz63 = "72db8b11-f6a9-4618-8243-341c46e36e41"
+Lorenz96 = "3fb22c43-5981-45f6-b839-6cbd65dbe502"
+MyUtils = "41c6dafd-7dbd-44be-9ef9-d84effbb6f05"
