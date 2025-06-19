@@ -1,0 +1,6 @@
+compass
+data
+*.cov
+report.xml
+report.html
+**/test/Manifest.toml

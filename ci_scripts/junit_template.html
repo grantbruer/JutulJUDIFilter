@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUnit Test Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .failure {
+            background-color: #ffe6e6;
+        }
+        .failure td {
+            color: #d10000;
+        }
+        .failure pre {
+            white-space: pre-wrap;
+        }
+        .trace {
+            display: none;
+        }
+        .summary {
+            margin-bottom: 20px;
+        }
+        .summary table {
+            margin-bottom: 10px;
+        }
+        .summary th, .summary td {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="summary">
+        <h1>Summary</h1>
+        <table>
+            <tr>
+                <th>Label1</th>
+                <th>Label2</th>
+                <th>Test Suite</th>
+                <th>tests</th>
+                <th>failures</th>
+                <th>errors</th>
+            </tr>
+            {% set ns = namespace(main_index=1) %}
+            {% for ts in test_suites %}
+                {% if loop.first or test_suites[loop.index0-1].labels[0] != ts.labels[0] %}
+                    {% set ns.main_index = loop.index %}
+                {% endif %}
+            <tr>
+                <td><a href="#label1_{{ ns.main_index }}">{{ ts.labels[0] }}</a></td>
+                <td>{{ ts.labels[1] }}</td>
+                <td>{{ ts.labels[2:]|join(' ') }}</td>
+                <td>{{ ts.data.tests }}</td>
+                <td>{{ ts.data.failures }}</td>
+                <td>{{ ts.data.errors }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+    {% for ts in test_suites %}
+        {% if not loop.first and test_suites[loop.index0-1].labels[0] != ts.labels[0] %}
+            </table>
+        {% endif %}
+        {% if loop.first or test_suites[loop.index0-1].labels[0] != ts.labels[0] %}
+            <h1 id="label1_{{ loop.index }}"><a href="#label1_{{ loop.index }}">{{ ts.labels[0] }}</a></h1>
+            <table>
+                <tr>
+                    <th>Label2</th>
+                    <th>Test Suite</th>
+                    <th>Test</th>
+                    <th>Time (s)</th>
+                    <th>Failure Type</th>
+                    <th>Failure Message</th>
+                    <th>Failure Trace</th>
+                </tr>
+        {% endif %}
+        {% for tc in ts.test_cases %}
+            <tr class="{% if tc.failure %}failure{% endif %}">
+                <td>{{ ts.labels[1] }}</td>
+                <td>{{ ts.labels[2:]|join(' ') }}</td>
+                <td>{{ tc.name }}</td>
+                <td>{{ tc.time }}</td>
+                {% if tc.failure %}
+                    <td>{{ tc.failure.type }}</td>
+                    <td>{{ tc.failure.message }}</td>
+                    <td><pre class="trace">{{ tc.failure.text }}</pre></td>
+                {% else %}
+                    <td colspan="3">No Failure</td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+    {% endfor %}
+</div>
+<script>
+    document.querySelectorAll('.failure').forEach(row => {
+        row.addEventListener('click', () => {
+            const trace = row.querySelector('.trace');
+            trace.style.display = trace.style.display === 'none' ? 'block' : 'none';
+        });
+    });
+</script>
+</body>
+</html>
