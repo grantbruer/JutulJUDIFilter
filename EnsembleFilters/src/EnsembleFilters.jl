@@ -1,0 +1,32 @@
+module EnsembleFilters
+
+include("ensemble_filter.jl")
+export AbstractEnsembleMember
+export AbstractEnsembleFilterParams
+export AbstractEnsembleFilter
+export get_filter_work_dir
+export get_ensemble
+export get_ensemble_path
+export get_ensemble_work_dir
+export get_ensemble_params
+export get_ensemble_size
+export make_ensemble_member
+export load_ensemble
+export save_ensemble
+export load_filter
+export save_filter
+export load_ensemble_member_params
+export load_ensemble_member_states
+export load_ensemble_member_rtms
+export generate_ensemble
+export assimilate_data
+
+include("ensemble_noobs_filter.jl")
+export EnsembleNoObsMember
+export EnsembleNoObsParams
+export EnsembleNoObsFilter
+export get_state
+export get_params
+export get_extra
+
+end
