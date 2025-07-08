@@ -7,6 +7,7 @@ export EnsembleNormFlowParams
 export EnsembleNormFlowFilter
 
 using Requires
+using Statistics
 
 function __init__()
     @require InvertibleNetworks="b7115f24-5f92-4794-81e8-23b0ddb121d3" begin
