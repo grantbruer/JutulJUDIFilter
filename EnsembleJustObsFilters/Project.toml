@@ -16,6 +16,15 @@ Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
 Requires = "ae029012-a4dd-5104-9daa-d747884805df"
 Statistics = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 
+[weakdeps]
+CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+ChainRulesCore = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
+Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+MyUtils = "41c6dafd-7dbd-44be-9ef9-d84effbb6f05"
+Optim = "429524aa-4258-5aef-a3af-852621145aeb"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+
 [compat]
 CairoMakie = "0.10,0.11"
 ChainRulesCore = "1.21"
@@ -35,12 +44,3 @@ julia = "1.8"
 [extras]
 SeismicPlumeEnsembleFilter = "32f13ed4-4a67-48ae-a811-e7b1b7af3319"
 SlimOptim = "e4c7bc62-5b23-4522-a1b9-71c2be45f1df"
-
-[weakdeps]
-CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
-ChainRulesCore = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
-Flux = "587475ba-b771-5e3f-ad9e-33799f191a9c"
-LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
-MyUtils = "41c6dafd-7dbd-44be-9ef9-d84effbb6f05"
-Optim = "429524aa-4258-5aef-a3af-852621145aeb"
-Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"

@@ -6,6 +6,7 @@ export EnsembleJustObsMember
 export EnsembleJustObsParams
 export EnsembleJustObsFilter
 
+using Statistics
 using Requires
 
 function __init__()
