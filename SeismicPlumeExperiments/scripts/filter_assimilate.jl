@@ -30,7 +30,7 @@ using JLD2: load
 using CairoMakie
 using MyUtils
 
-using EnsembleFilters: get_filter_work_dir, load_filter, save_filter
+using EnsembleFilters: EnsembleFilters, get_filter_work_dir, load_filter, save_filter
 
 name = splitpath(Base.active_project())[end-1]
 if name == "EnKF"
